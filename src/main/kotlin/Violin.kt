@@ -3,6 +3,7 @@ class Violin:Instrumento() {
 
     //Recorreremos las notas y las interpretaremos, como en el piano.
     override fun play() {
+        i("Violin.play","comienza la ejecución de play()")
         println("===> Tocando violin")
         melodia.forEach { nota ->
             when (nota) {
@@ -16,5 +17,6 @@ class Violin:Instrumento() {
             }
         }
         println("")
+        i("Violin.play","termina la ejecución de play()")
     }
 }
